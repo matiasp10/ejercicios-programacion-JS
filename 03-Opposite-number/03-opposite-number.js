@@ -12,5 +12,6 @@ Solucion:
 */
 
 function opposite(number) {
+  // Solo devuelvo el inverso del numbero ingresado
   return -number;
 }

@@ -25,9 +25,12 @@
 // https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/javascript
 
 function monkeyCount(n) {
+    // Creo un array vacio donde colocare los monos
     let monkeys = []
+    // Simple bucle for con la cantidad de iteraciones igual al numero de monos especificados y los voy colocando dentro del array
     for (let i = 1; i <= n; i++) {
         monkeys.push(i)
     }
+    // Devuelvo el array lleno de monos
     return monkeys
 }

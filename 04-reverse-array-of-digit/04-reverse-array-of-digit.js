@@ -8,6 +8,7 @@
 // Mi solucion:
 
 function digitize(n) {
+  // Devuelvo el numero con los metodos toString() - convierte los numberos en un string - split("") - separa el string en un arreglo separando cada palabra - reverse() - revierte el orden del arreglo - map((a)=> parseInt(a)) - para pasar a numberos cada string dentro del arreglo
   return n
     .toString()
     .split('')
@@ -17,12 +18,17 @@ function digitize(n) {
 
 // Otras soluciones:
 
+// Utilizando el metodo String() para convertir el numbero en un string
 function digitize(n) {
   return String(n).split('').map(Number).reverse();
 }
+
+// Utilizando la concatenacion para convertir el numbero en un string
 function digitize(n) {
   return (n + '').split('').map(Number).reverse();
 }
+
+// Crea un Array con el numbero convertido a string
 function digitize(n) {
   return Array.from(String(n), Number).reverse();
 }
